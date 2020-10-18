@@ -1,4 +1,4 @@
-<img src="https://ik.imagekit.io/meaid6cls2/Happy/Group_1_1__K804IRXc6.png" />
+<img src="https://ik.imagekit.io/meaid6cls2/Happy/Group_1_2__CpPpTdIsK.png" />
 
 ---
 
