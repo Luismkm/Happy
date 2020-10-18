@@ -82,9 +82,9 @@ export default function CreateOrphanage() {
         <form onSubmit={handleSubmit} className="create-orphanage-form">
           <fieldset>
             <legend>Dados</legend>
-
+            
             <Map 
-              center={[-27.2092052,-49.6401092]} 
+              center={[-25.1149943,-50.161956]} 
               style={{ width: '100%', height: 280 }}
               zoom={15}
               onclick={handleMapClick}

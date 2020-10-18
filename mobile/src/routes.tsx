@@ -21,7 +21,7 @@ export default function Routes() {
         <Screen name="OrphanagesMap" component={OrphanagesMap} />
        
         <Screen 
-          name="OrphanagesDetails" 
+          name="OrphanageDetails" 
           component={OrphanagesDetails}
           options={{
             headerShown: true,
@@ -39,7 +39,7 @@ export default function Routes() {
         />
 
         <Screen 
-          name="orphanageData" 
+          name="OrphanageData" 
           component={OrphanageData}
           options={{
             headerShown: true,

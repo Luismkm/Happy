@@ -1,6 +1,6 @@
 import { Request, Response } from 'express'
 import { getRepository } from 'typeorm'
-import orphanageView from '../views/orphanages.view'
+import orphanagesView from '../views/orphanages.view'
 import * as Yup from 'yup'
 
 import Orphanage from '../models/Orphanage'
@@ -14,7 +14,7 @@ export default {
       relations: ['images']
     })
 
-    return response.json(orphanageView.renderMany(orphanages))
+    return response.json(orphanagesView.renderMany(orphanages))
   },
 
   async show(request: Request, response: Response) {
@@ -26,8 +26,12 @@ export default {
       relations: ['images']
     })
 
-    return response.json(orphanageView.render(orphanage))
+    return response.json(orphanagesView.render(orphanage))
   },
+
+  
+
+  
 
   async create(request: Request, response:Response) {
     const {
@@ -55,7 +59,7 @@ export default {
       about,
       instructions,
       opening_hours,
-      open_on_weekends,
+      open_on_weekends: open_on_weekends === 'true',
       images
     }
 
@@ -73,6 +77,7 @@ export default {
         })
       )
     })
+
 
     await schema.validate(data, {
       abortEarly: false,
